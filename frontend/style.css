@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Serif+Display&family=Orbitron:wght@500;700&display=swap");
+
+:root {
+  --bg: #0a0b10;
+  --ink: #f7f5ff;
+  --accent: #46f7ff;
+  --accent-dark: #1dd7e5;
+  --card: #121520;
+  --muted: #a9b0c7;
+  --line: rgba(255, 255, 255, 0.08);
+  --shadow: 0 30px 70px rgba(3, 10, 28, 0.45);
+  --neon: #9d4bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--ink);
+  font-size: 18px;
+  background: radial-gradient(circle at top left, rgba(70, 247, 255, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 70% 10%, rgba(157, 75, 255, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 20% 80%, rgba(27, 245, 170, 0.16) 0%, transparent 50%),
+    var(--bg);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.hero {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 12px;
+  font-family: "Orbitron", "Space Grotesk", sans-serif;
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #0a0b10;
+  background: linear-gradient(135deg, var(--accent), var(--neon));
+  box-shadow: 0 0 20px rgba(70, 247, 255, 0.35);
+  font-family: "Orbitron", "Space Grotesk", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.brand-tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+h1 {
+  font-family: "DM Serif Display", "Times New Roman", serif;
+  font-size: clamp(2.8rem, 4.6vw, 4rem);
+  margin: 0 0 12px;
+  text-shadow: 0 10px 30px rgba(70, 247, 255, 0.18);
+}
+
+.subhead {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  background: rgba(18, 21, 32, 0.9);
+  border: 1px solid rgba(70, 247, 255, 0.2);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  box-shadow: inset 0 0 0 1px rgba(157, 75, 255, 0.15);
+}
+
+.hero-card {
+  background: linear-gradient(145deg, rgba(18, 21, 32, 0.95), rgba(10, 12, 20, 0.9));
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.hero-card-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-card-header h2 {
+  margin: 0 0 6px;
+}
+
+.hero-card-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bot-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  padding: 6px;
+  background: rgba(12, 15, 24, 0.8);
+  border: 1px solid rgba(70, 247, 255, 0.3);
+  box-shadow: 0 0 20px rgba(70, 247, 255, 0.25);
+}
+
+.bot-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-card h2 {
+  margin: 0 0 16px;
+}
+
+.prompt {
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(70, 247, 255, 0.2);
+  background: rgba(11, 14, 22, 0.8);
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-family: inherit;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  color: var(--ink);
+}
+
+.prompt:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(70, 247, 255, 0.25);
+}
+
+.chat-area {
+  background: linear-gradient(160deg, rgba(18, 21, 32, 0.95), rgba(8, 10, 16, 0.9));
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 24px;
+}
+
+.chat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(157, 75, 255, 0.25);
+  background: rgba(10, 12, 20, 0.75);
+  margin-bottom: 18px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(70, 247, 255, 0.3);
+  background: rgba(12, 15, 24, 0.8);
+}
+
+.status-pill .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9aa4c1;
+}
+
+.status-pill.online {
+  border-color: rgba(27, 245, 170, 0.6);
+}
+
+.status-pill.online .dot {
+  background: #1bf5aa;
+  box-shadow: 0 0 8px rgba(27, 245, 170, 0.8);
+}
+
+.status-pill.offline {
+  border-color: rgba(255, 90, 90, 0.6);
+}
+
+.status-pill.offline .dot {
+  background: #ff5a5a;
+  box-shadow: 0 0 8px rgba(255, 90, 90, 0.8);
+}
+
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.memory-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(70, 247, 255, 0.25);
+  background: rgba(12, 15, 24, 0.8);
+  color: var(--muted);
+}
+
+.toggle-btn {
+  background: rgba(70, 247, 255, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(70, 247, 255, 0.35);
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mode-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(70, 247, 255, 0.25);
+  background: rgba(10, 12, 20, 0.85);
+  margin-bottom: 20px;
+}
+
+.mode-strip-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.click-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(157, 75, 255, 0.2);
+  color: var(--accent);
+  font-size: 0.85rem;
+  border: 1px dashed rgba(70, 247, 255, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.uci-logo {
+  width: 120px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.uci-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(70, 247, 255, 0.3));
+}
+
+.mode-strip h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.mode-strip p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.mode-btn {
+  background: linear-gradient(135deg, var(--accent), var(--neon));
+  color: #0a0b10;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(70, 247, 255, 0.25);
+}
+
+.feature-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.feature {
+  background: rgba(12, 15, 24, 0.7);
+  border: 1px solid rgba(157, 75, 255, 0.25);
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.message {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.message .avatar {
+  background: linear-gradient(145deg, var(--accent), var(--neon));
+  color: #0a0b10;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.message.user .avatar {
+  background: #1a1f2e;
+  color: var(--accent);
+}
+
+.message .text {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.message .meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.confidence-meter {
+  margin-top: 6px;
+  display: grid;
+  gap: 4px;
+}
+
+.confidence-meter span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.confidence-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--neon));
+  box-shadow: 0 0 10px rgba(70, 247, 255, 0.35);
+}
+
+.confidence-bar.low {
+  background: linear-gradient(90deg, #ff5a5a, #ffa36a);
+}
+
+.confidence-bar.high {
+  background: linear-gradient(90deg, #1bf5aa, #46f7ff);
+}
+
+.intent-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.intent-suggestions button {
+  background: rgba(157, 75, 255, 0.18);
+  color: var(--ink);
+  border: 1px solid rgba(157, 75, 255, 0.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.product-card {
+  border: 1px solid rgba(70, 247, 255, 0.2);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(12, 15, 24, 0.85);
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.product-actions button {
+  background: rgba(70, 247, 255, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(70, 247, 255, 0.35);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.typing .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: blink 1s infinite;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.product-card h4 {
+  margin: 0 0 6px;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.composer {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.composer input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(70, 247, 255, 0.2);
+  font-size: 1.05rem;
+  font-family: inherit;
+  background: rgba(9, 11, 18, 0.85);
+  color: var(--ink);
+}
+
+.composer button {
+  background: var(--accent);
+  color: #0a0b10;
+  border: none;
+  padding: 0 22px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.composer button:hover {
+  background: var(--accent-dark);
+}
+
+@media (max-width: 700px) {
+  .chat-area {
+    padding: 16px;
+  }
+
+  .composer {
+    flex-direction: column;
+  }
+
+  .composer button {
+    padding: 12px 18px;
+  }
+}

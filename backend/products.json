@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P1001",
+    "name": "Velocity Run Pro",
+    "category": "running shoes",
+    "price": 89.99,
+    "color": "black",
+    "description": "Lightweight running shoes with responsive cushioning and breathable mesh."
+  },
+  {
+    "id": "P1002",
+    "name": "TrailBlazer GTX",
+    "category": "running shoes",
+    "price": 119.00,
+    "color": "green",
+    "description": "Water-resistant trail shoes with grippy outsole for rugged terrain."
+  },
+  {
+    "id": "P1003",
+    "name": "AeroFit Hoodie",
+    "category": "hoodie",
+    "price": 54.50,
+    "color": "blue",
+    "description": "Soft fleece hoodie with moisture-wicking lining for everyday comfort."
+  },
+  {
+    "id": "P1004",
+    "name": "Pulse Wireless Earbuds",
+    "category": "earbuds",
+    "price": 79.00,
+    "color": "white",
+    "description": "Wireless earbuds with noise isolation and 24-hour battery case."
+  },
+  {
+    "id": "P1005",
+    "name": "StormShield Jacket",
+    "category": "jacket",
+    "price": 129.99,
+    "color": "black",
+    "description": "Windproof jacket with insulated lining for cold weather."
+  },
+  {
+    "id": "P1006",
+    "name": "Voyager Backpack",
+    "category": "backpack",
+    "price": 69.00,
+    "color": "gray",
+    "description": "Travel backpack with 30L capacity and padded laptop sleeve."
+  },
+  {
+    "id": "P1007",
+    "name": "Lumina Smartwatch",
+    "category": "smartwatch",
+    "price": 149.00,
+    "color": "black",
+    "description": "Fitness smartwatch with heart rate, GPS, and sleep tracking."
+  },
+  {
+    "id": "P1008",
+    "name": "Nova 4K Monitor",
+    "category": "monitor",
+    "price": 299.99,
+    "color": "black",
+    "description": "27-inch 4K UHD monitor with HDR and ultra-thin bezels."
+  },
+  {
+    "id": "P1009",
+    "name": "Atlas Gaming Laptop",
+    "category": "laptop",
+    "price": 999.99,
+    "color": "gray",
+    "description": "15-inch gaming laptop with dedicated GPU and 144Hz display."
+  },
+  {
+    "id": "P1010",
+    "name": "EchoPro Camera",
+    "category": "camera",
+    "price": 549.00,
+    "color": "black",
+    "description": "Mirrorless camera with 4K video and compact travel-ready body."
+  },
+  {
+    "id": "P1011",
+    "name": "Glide Sneaker",
+    "category": "sneakers",
+    "price": 74.99,
+    "color": "white",
+    "description": "Classic sneakers with durable rubber sole and breathable upper."
+  },
+  {
+    "id": "P1012",
+    "name": "ZenNoise Headphones",
+    "category": "headphones",
+    "price": 129.00,
+    "color": "black",
+    "description": "Over-ear headphones with active noise canceling."
+  }
+]

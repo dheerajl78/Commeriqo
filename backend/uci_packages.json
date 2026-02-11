@@ -1,0 +1,5 @@
+[
+  {"order_id": "UCI-1001", "status": "Received at mailroom", "eta": "Ready for pickup", "location": "UCI Mail Services"},
+  {"order_id": "UCI-1002", "status": "In transit", "eta": "2026-02-13", "location": "Carrier"},
+  {"order_id": "UCI-1003", "status": "Delivered to campus", "eta": "Awaiting processing", "location": "UCI Mail Services"}
+]

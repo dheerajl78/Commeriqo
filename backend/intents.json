@@ -1,0 +1,77 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "examples": ["hi", "hello", "hey", "good morning", "good evening", "yo", "hey there", "hello there"]
+    },
+    {
+      "intent": "goodbye",
+      "examples": ["bye", "goodbye", "see you", "later", "thanks bye", "talk to you later"]
+    },
+    {
+      "intent": "product_search",
+      "examples": [
+        "show me running shoes under 100",
+        "i need a laptop for gaming",
+        "find wireless earbuds",
+        "do you have a blue hoodie",
+        "show sneakers under $80",
+        "looking for a backpack",
+        "find a smartwatch",
+        "show me 4k monitors"
+      ]
+    },
+    {
+      "intent": "product_recommendation",
+      "examples": [
+        "recommend me a phone",
+        "suggest a camera for travel",
+        "what should i buy for winter",
+        "best headphones for workouts",
+        "recommend a gift for runner"
+      ]
+    },
+    {
+      "intent": "order_tracking",
+      "examples": [
+        "track order 1234",
+        "where is my order 9876",
+        "check order status 4455",
+        "order 2222 status",
+        "track my order"
+      ]
+    },
+    {
+      "intent": "refund_request",
+      "examples": [
+        "i want a refund",
+        "return my order",
+        "how do i get a refund",
+        "i need to return this",
+        "refund for order 1234"
+      ]
+    },
+    {
+      "intent": "faq",
+      "examples": [
+        "what is your return policy",
+        "how long is shipping",
+        "do you ship internationally",
+        "what payment methods do you accept",
+        "how can i contact support"
+      ]
+    },
+    {
+      "intent": "uci_package_help",
+      "examples": [
+        "uci student package assistant",
+        "where is my package at the mail room",
+        "my package is late at uci",
+        "uci mailroom has not received my order",
+        "i live on campus and my package is missing",
+        "uci housing package delay",
+        "check my uci package status"
+      ]
+    }
+  ]
+}

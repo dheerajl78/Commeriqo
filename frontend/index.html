@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce AI Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <div class="brand">
+            <div class="brand-mark">CQ</div>
+            <div>
+              <p class="eyebrow">Commeriqo</p>
+              <p class="brand-tagline">Commerce Intelligence Studio</p>
+            </div>
+          </div>
+          <h1>Commeriqo — Intelligent Shopping Assistant</h1>
+          <p class="subhead">
+            Hyper-personalized product discovery, smart recommendations, and order
+            control in one conversation.
+          </p>
+          <div class="chips">
+            <span>Product Search</span>
+            <span>Smart Recommendations</span>
+            <span>Order Tracking</span>
+            <span>Instant FAQs</span>
+            <span>Cart Builder</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="bot-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img">
+                <defs>
+                  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#46f7ff" />
+                    <stop offset="100%" stop-color="#9d4bff" />
+                  </linearGradient>
+                </defs>
+                <rect x="18" y="26" width="84" height="72" rx="24" fill="#0d0f14" stroke="url(#neon)" stroke-width="4"/>
+                <circle cx="48" cy="62" r="8" fill="url(#neon)" />
+                <circle cx="72" cy="62" r="8" fill="url(#neon)" />
+                <rect x="48" y="80" width="24" height="8" rx="4" fill="#46f7ff" opacity="0.7"/>
+                <rect x="54" y="10" width="12" height="18" rx="6" fill="#46f7ff" />
+              </svg>
+            </div>
+            <div>
+              <h2>Quick Prompts <span class="click-badge">Click here →</span></h2>
+              <p>Try high-signal requests used by top commerce bots.</p>
+            </div>
+          </div>
+          <button class="prompt" data-prompt="Show me running shoes under 100">Running shoes under $100</button>
+          <button class="prompt" data-prompt="Recommend a camera for travel">Recommend a travel camera</button>
+          <button class="prompt" data-prompt="Track order 1234">Track order 1234</button>
+          <button class="prompt" data-prompt="Track order 9876">Track order 9876</button>
+          <button class="prompt" data-prompt="Build me a gym starter kit under 250">Gym starter kit under $250</button>
+          <button class="prompt" data-prompt="Find a gift for a runner">Gift for a runner</button>
+          <button class="prompt" data-prompt="Compare two gaming laptops under 1200">Compare laptops under $1200</button>
+          <button class="prompt" data-prompt="Show eco-friendly backpacks under 80">Eco-friendly backpacks under $80</button>
+          <button class="prompt" data-prompt="What is your return policy?">Return policy</button>
+          <button class="prompt" data-prompt="How long is shipping?">Shipping time</button>
+        </div>
+      </header>
+
+      <main class="chat-area">
+        <section class="chat-toolbar">
+          <div class="status-pill" id="statusPill">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="statusText">Checking backend...</span>
+          </div>
+          <div class="toolbar-actions">
+            <div class="memory-badge" id="memoryBadge">Memory: Off</div>
+            <button class="toggle-btn" id="memoryToggle">Enable Memory</button>
+          </div>
+        </section>
+        <section class="mode-strip">
+          <div>
+            <h3>UCI Student Package Assistant</h3>
+            <p>For campus mailroom delays, package traces, and pickup guidance.</p>
+          </div>
+          <div class="mode-strip-actions">
+            <div class="uci-logo">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/University_of_California%2C_Irvine_logo.svg"
+                alt="UC Irvine logo"
+              />
+            </div>
+            <span class="click-badge">Click here →</span>
+            <button class="mode-btn" id="uciModeBtn">Connect to AI Receptionist</button>
+          </div>
+        </section>
+        <section class="feature-strip">
+          <div class="feature">
+            <h3>Smart Cart</h3>
+            <p>Builds bundles, cross-sells, and applies price constraints.</p>
+          </div>
+          <div class="feature">
+            <h3>Order Actions</h3>
+            <p>Edit address, change items, or cancel in-flight orders.</p>
+          </div>
+          <div class="feature">
+            <h3>Proactive Updates</h3>
+            <p>Delivery ETA, delay alerts, and refund status in-chat.</p>
+          </div>
+          <div class="feature">
+            <h3>Policy Concierge</h3>
+            <p>Returns, warranties, and shipping in a single reply.</p>
+          </div>
+        </section>
+        <section class="chat-window" id="chatWindow">
+          <div class="bot message">
+            <div class="avatar">CQ</div>
+            <div>
+              <p class="text">Hi! What are you shopping for today?</p>
+              <p class="meta">Tip: “Show me running shoes under $100”.</p>
+            </div>
+          </div>
+        </section>
+
+        <form class="composer" id="chatForm">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Ask about products, orders, or policies..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
